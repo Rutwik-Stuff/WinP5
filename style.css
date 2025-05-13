@@ -1,0 +1,78 @@
+/* Windows 95 Background */
+body {
+    font-family: Tahoma, Geneva, sans-serif; /* Close to MS Sans Serif */
+    background-color: #C0C0C0; /* Classic Windows 95 gray */
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Window Container */
+.window {
+    width: 400px;
+    background: #C0C0C0;
+    border: 2px solid #000;
+    padding: 10px;
+    box-shadow: inset -2px -2px #808080, inset 2px 2px #FFFFFF; /* Windows 95 bevel effect */
+}
+
+/* Title Bar */
+.title-bar {
+    background: navy; /* Classic deep blue title bar */
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title Bar Buttons */
+.title-bar .buttons {
+    display: flex;
+    gap: 2px;
+}
+
+.title-bar button {
+    width: 16px;
+    height: 16px;
+    background: silver;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0px gray;
+}
+
+/* Main Buttons */
+button {
+    background: silver;
+    border: 2px solid #808080;
+    padding: 5px 10px;
+    box-shadow: inset -2px -2px #FFFFFF, inset 2px 2px #808080; /* Classic 3D button */
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 2px 2px #FFFFFF, inset -2px -2px #808080; /* Pressed button effect */
+}
+
+/* Text Fields */
+input[type="text"] {
+    background: white;
+    border: 2px inset #808080;
+    padding: 4px;
+    width: 100%;
+}
+
+/* Menu Bar */
+.menu-bar {
+    background: silver;
+    padding: 4px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Dropdown Menus */
+.select {
+    background: silver;
+    border: 2px inset #808080;
+    padding: 4px;
+}
