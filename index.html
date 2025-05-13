@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinP5 Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <span>WinP5 Setup</span>
+        <div class="buttons">
+            <button>[−]</button>
+            <button>[▢]</button>
+            <button>[X]</button>
+        </div>
+    </div>
+
+    <!-- Main Window -->
+    <div class="window">
+        <h2>Welcome to WinP5 Setup</h2>
+        <p>Prepare for an installation that may or may not actually work.</p>
+
+        <!-- Fake OS Selection -->
+        <label for="os-select">Select Your Operating System:</label>
+        <select id="os-select" class="select">
+            <option>Windows 99</option>
+            <option>Windows Neptune</option>
+            <option>Windows ME (Unstable Edition)</option>
+            <option>Windows 2000 (Half-Broken Beta)</option>
+        </select>
+
+        <!-- Fake Progress Bar -->
+        <div class="window" style="margin-top: 15px;">
+            <p>Installation Progress:</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 3%; background: navy;"></div>
+            </div>
+            <p>Estimated Time Remaining: ∞ Hours</p>
+        </div>
+
+        <!-- Start Installation Button -->
+        <button id="install-btn">Start Installation</button>
+
+        <!-- Fake Error Message (Hidden Until Activated) -->
+        <div id="error-message" class="window" style="display: none; margin-top: 15px; color: red;">
+            <p><strong>ERROR:</strong> Setup encountered an unexpected problem. Reason: Unknown.</p>
+            <p>Press "OK" to pretend everything is fine.</p>
+            <button onclick="closeError()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
